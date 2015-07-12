@@ -1,5 +1,10 @@
 # Kiki changelog
 
+## 0.1.2 (12/07/2015)
+
+- Updated docs
+- Removed margin and padding helpers
+
 ## 0.1.1 (12/07/2015)
 
 - Added gulp tasks for bumping and creating git tags
