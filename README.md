@@ -1,8 +1,8 @@
 
 
-## Kiki An internal library for Sass.
+## Kiki - Simple library for Sass.
 
-Kiki a library of common mixins, helper classes that are used in projects. It also contains grid.
+Kiki is a library of useful mixins and helper classes. It also contains grid.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Kiki a library of common mixins, helper classes that are used in projects. It al
 ## Installation
 
 ```javascript
-bower install --save 
+bower install kiki --save 
 ```
 
 - Import Kiki settings file at the beginning of your styleshee:
