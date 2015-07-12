@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #Kiki - an internal library for Sass
+    #Kiki - Simple library for Sass
 \*------------------------------------*/
 
 @import 'mixins/selection';
@@ -19,14 +19,12 @@
 @import 'helpers/float';
 @import 'helpers/clearfix';
 @import 'helpers/align';
-@import 'helpers/margin';
-@import 'helpers/padding';
 @import 'helpers/visibility';
 @import 'helpers/typography';
 @import 'helpers/text-transform';
 
 @import 'media-queries/mq'; 
 @import 'media-queries/media-queries-mixins';
-  
+   
 @import 'grid/kiki-grid';
 
