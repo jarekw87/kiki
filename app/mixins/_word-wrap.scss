@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+/// Wrap long lines of text.
+///
+/// @example scss - Usage
+///   .element {
+///     @include break-word;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     word-break: break-word;
+///      -webkit-hyphens: auto;
+///      -moz-hyphens: auto;
+///      -ms-hyphens: auto;
+///      -hyphens: auto;
+///    }
+
+@mixin word-wrap {
+  word-break: break-word;
+  hyphens: auto;
+}

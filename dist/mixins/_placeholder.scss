@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+/// Mixin to style placeholders.
+/// Use it with Autoprefixer.
+///
+/// @example scss - Usage
+///   .element {
+///     @include placeholder {
+///       color: $eee;
+///     }
+///   }
+///
+/// @example css - CSS Output (with Autoprefixer)
+///   .element::-webkit-input-placeholder {
+///     color: #eee;
+///   }
+///   
+///   .element::-moz-placeholder {
+///     color: #eee;
+///   }
+///   
+///   .element:-ms-input-placeholder {
+///     color: #eee;
+///   }
+///   
+///   .element::placeholder {
+///     color: #eee;
+///   }
+
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+}

@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/// Set generic focus on element. Same for every browser.
+///
+/// @example scss - Usage
+///   .element {
+///     @include tab-focus;
+///   }
+///
+/// @example css - CSS Output
+///   .element:focus {
+///     outline: thin dotted;
+///   }
+
+@mixin tab-focus {
+  &:focus {
+    outline: thin dotted;
+  }
+}

@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/// Remove blue outline on focus in chrome.
+///
+/// @example scss - Usage
+///   .element {
+///     @include reset-focus;
+///   }
+///
+/// @example css - CSS Output
+///   .element:focus {
+///     outline: none !important;
+///   }
+
+@mixin reset-focus {
+  &:focus {
+    outline: none !important;
+  }
+}

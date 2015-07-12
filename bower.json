@@ -1,0 +1,34 @@
+{
+  "name": "kiki",
+  "version": "0.1.0",
+  "description": "Kiki - Simple library for Sass.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrzejewski/kiki.git"
+  },
+  "authors": [
+    { "name": "Adrian Andrzejewski", "homepage": "https://github.com/andrzejewski" }
+  ]
+  "main": "dist/kiki",
+  "keywords": [
+    "kiki",
+    "mixins",
+    "sass",
+    "css",
+    "grid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app",
+    "doc",
+    ".bowerrc",
+    ".sassdocrc",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "*.md"
+  ],
+  "dependencies": {}
+}

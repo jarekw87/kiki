@@ -1,0 +1,20 @@
+/// Include css3pie. Path to PIE.htc is configured in _settings.scss file 
+///
+/// @link http://css3pie.com/
+///
+/// @example scss - Usage
+///   .element {
+///     @include pie;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     position: relative;
+///     behavior: url('path to PIE.htc');
+///   }
+
+@mixin pie {
+  position: relative;
+  behavior: url($pie-path);
+}
+

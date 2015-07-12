@@ -1,0 +1,69 @@
+/// Mixin for extra small only devices
+///
+/// @group Media queries 
+///
+@mixin extra-small {
+  @include mq($until: extra-small) {
+    @content;
+  } 
+}
+
+/// Mixin for small and bigger devices
+///
+/// @group Media queries 
+///
+@mixin small {
+  @include mq(small) {
+    @content;
+  } 
+}
+
+/// Mixin for small only devices
+///
+/// @group Media queries 
+///
+@mixin small-only {
+  @include mq(small, medium) { 
+    @content;
+  } 
+}
+
+/// Mixin for medium and bigger devices
+///
+/// @group Media queries 
+///
+@mixin medium {
+  @include mq(medium) {
+    @content;
+  } 
+}
+
+/// Mixin for medium only devices
+///
+/// @group Media queries 
+///
+@mixin medium-only {
+  @include mq(medium, large) {
+    @content;
+  } 
+}
+
+/// Mixin for small and medium devices
+///
+/// @group Media queries 
+///
+@mixin small-medium {
+  @include mq(small, large) {
+    @content;
+  } 
+}
+
+/// Mixin for large only devices
+///
+/// @group Media queries 
+///
+@mixin large {
+  @include mq(large) {
+    @content;
+  } 
+}

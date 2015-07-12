@@ -1,0 +1,22 @@
+{
+  "name": "kiki",
+  "version": "0.1.0",
+  "description": "Kiki - Simple library for Sass.",
+  "author": "Adrian Andrzejewski",
+  "engines": {
+    "node": ">= 0.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrzejewski/kiki.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-bump": "^0.3.0",
+    "gulp-load-plugins": "^0.9.0",
+    "sassdoc": "^2.1.7"
+  },
+  "license": "MIT"
+}

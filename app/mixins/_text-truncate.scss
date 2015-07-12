@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+/// Truncates text and adds an ellipsis to represent overflow.
+///
+/// @param {Number} $width [100%]
+///   Max-width for the string to respect before being truncated
+///
+/// @example scss - Usage
+///   .element {
+///     @include text-truncate;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     max-width: 100%;
+///     overflow: hidden;
+///     text-overflow: ellipsis;
+///     white-space: nowrap;
+///   }
+
+@mixin text-truncate($width: 100%) {
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

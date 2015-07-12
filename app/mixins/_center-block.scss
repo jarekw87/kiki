@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+/// Quickly center any element within its parent. Requires width or max-width to be set
+///
+/// @example scss - Usage
+///   .element {
+///     @include center-block;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     display: block;
+///     margin-right: auto;
+///     margin-left: auto;
+///   }
+
+@mixin center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
