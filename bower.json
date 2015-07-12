@@ -1,14 +1,17 @@
 {
   "name": "kiki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Kiki - Simple library for Sass.",
   "repository": {
     "type": "git",
     "url": "git@github.com:andrzejewski/kiki.git"
   },
   "authors": [
-    { "name": "Adrian Andrzejewski", "homepage": "https://github.com/andrzejewski" }
-  ]
+    {
+      "name": "Adrian Andrzejewski",
+      "homepage": "https://github.com/andrzejewski"
+    }
+  ],
   "main": "dist/kiki",
   "keywords": [
     "kiki",
