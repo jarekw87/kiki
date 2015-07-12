@@ -32,24 +32,24 @@
       .pipe(gulp.dest(dist));
   });
 
-  gulp.task('default', ['copy-app']);
+  gulp.task('dist', ['copy-app']);
 
-  gulp.task('bump-version', function () {
+  gulp.task('bump-version', ['dist'], function () {
     return gulp.src(['./bower.json', './package.json'])
       .pipe(bump({type: "patch"}).on('error', gutil.log))
       .pipe(gulp.dest('./'));
   });
 
-  gulp.task('commit-changes', function () {
+  gulp.task('commit-changes', ['bump-version'], function () {
     return gulp.src('.')
       .pipe(git.commit('[Prerelease] Bumped version number', {args: '-a'}));
   });
 
-  gulp.task('push-changes', function (cb) {
+  gulp.task('push-changes', ['commit-changes'], function (cb) {
     git.push('origin', 'master', cb);
   });
 
-  gulp.task('create-new-tag', function (cb) {
+  gulp.task('create-new-tag', ['push-changes'], function (cb) {
     var version = getPackageJsonVersion();
     git.tag(version, 'Created Tag for version: ' + version, function (error) {
       if (error) {
@@ -63,20 +63,6 @@
     };
   });
 
-  gulp.task('release', function (callback) {
-    runSequence(
-      'bump-version',
-      'commit-changes',
-      'push-changes',
-      'create-new-tag',
-      function (error) {
-        if (error) {
-          console.log(error.message);
-        } else {
-          console.log('RELEASE FINISHED SUCCESSFULLY');
-        }
-        callback(error);
-      });
-  });
+  gulp.task('release', ['create-new-tag']);
 
 })();
