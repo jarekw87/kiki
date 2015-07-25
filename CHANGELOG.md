@@ -1,5 +1,10 @@
 # Kiki changelog
 
+## 0.1.3 (25/07/2015)
+- Change main property to specific file
+- Added sassdoc dependency do package.json
+- Updated documentation
+
 ## 0.1.2 (12/07/2015)
 
 - Updated docs
