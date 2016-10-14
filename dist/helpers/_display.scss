@@ -1,0 +1,53 @@
+/*
+* display utilities
+*/
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}

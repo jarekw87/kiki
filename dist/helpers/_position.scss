@@ -1,0 +1,27 @@
+/*
+* positions
+*/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.centered {
+  @include center-block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}

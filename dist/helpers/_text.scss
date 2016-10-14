@@ -1,0 +1,73 @@
+/*
+* text utilites
+*/
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.align-top { 
+  vertical-align: top; 
+}
+
+.align-bottom { 
+  vertical-align: bottom; 
+}
+
+.align-middle { 
+  vertical-align: middle; 
+}
+
+.text-normal { 
+  font-weight: normal; 
+}
+
+.text-bold { 
+  font-weight: bold; 
+}
+
+.text-italic { 
+  font-style: italic; 
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-clip {
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-break {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+}

@@ -2,6 +2,7 @@
     #Kiki - an internal library for Sass
 \*------------------------------------*/
 
+//mixins
 @import 'mixins/selection';
 @import 'mixins/placeholder';
 @import 'mixins/clearfix';
@@ -16,15 +17,25 @@
 @import 'mixins/triangle';
 @import 'mixins/position';
 
-@import 'helpers/float';
+//utilities
+@import 'helpers/animation';
 @import 'helpers/clearfix';
-@import 'helpers/align';
-@import 'helpers/visibility';
-@import 'helpers/typography';
-@import 'helpers/text-transform';
+@import 'helpers/cursor';
+@import 'helpers/display';
+@import 'helpers/divider';
+@import 'helpers/loading';
+@import 'helpers/margin';
+@import 'helpers/padding';
+@import 'helpers/position';
+@import 'helpers/shadow';
+@import 'helpers/shape';
+@import 'helpers/text';
 
+
+//mq
 @import 'media-queries/mq'; 
 @import 'media-queries/media-queries-mixins';
   
+//grid
 @import 'grid/kiki-grid';
 

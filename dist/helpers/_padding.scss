@@ -1,0 +1,63 @@
+@if $padding-left {
+  @for $i from 0 through $padding-left-range {
+    .pl-#{$i}0 {
+      padding-left: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-left-minus {
+  @for $i from 0 through $padding-left-minus-range {
+    .pl--#{$i}0 {
+      padding-left: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-right {
+  @for $i from 0 through $padding-right-range {
+    .pr-#{$i}0 {
+      padding-right: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-right-minus {
+  @for $i from 0 through $padding-right-minus-range {
+    .pr--#{$i}0 {
+      padding-right: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-top {
+  @for $i from 0 through $padding-top-range {
+    .pt-#{$i}0 {
+      padding-top: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-top-minus {
+  @for $i from 0 through $padding-top-minus-range {
+    .pt--#{$i}0 {
+      padding-top: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-bottom {
+  @for $i from 0 through $padding-bottom-range {
+    .pb-#{$i}0 {
+      padding-bottom: 10px * $i !important;
+    }
+  }
+}
+
+@if $padding-bottom-minus {
+  @for $i from 0 through $padding-bottom-minus-range {
+    .pb--#{$i}0 {
+      padding-bottom: 10px * $i !important;
+    }
+  }
+}
